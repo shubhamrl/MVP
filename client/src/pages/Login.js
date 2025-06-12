@@ -10,7 +10,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://tb-backend-hh7d.onrender.com/api/auth/login', 
+      const res = await axios.post('https://tb-backend-1.onrender.com/api/auth/login', 
         { email, password },
         { headers: { 'Content-Type': 'application/json' } }
       );
