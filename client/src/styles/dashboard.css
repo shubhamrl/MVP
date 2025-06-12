@@ -1,0 +1,124 @@
+/* client/src/styles/dashboard.css */
+
+.admin-dashboard-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-dashboard-container h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Current Round Section */
+.current-round-section {
+  margin-bottom: 2rem;
+}
+
+.current-round-section h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Image Grid (6 कॉलम) */
+.admin-image-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.admin-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  padding: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.admin-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.admin-card-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.admin-card-name {
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.admin-card-bet {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.admin-card-button {
+  padding: 0.4rem 0.8rem;
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.admin-card-button:hover {
+  background: #1976d2;
+}
+
+/* Last 10 Wins Section */
+.last-wins-section {
+  margin-top: 2rem;
+}
+
+.last-wins-section h2 {
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.last-wins-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.last-wins-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 500;
+  color: #555;
+}
+
+.last-wins-list li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive ब्रेकपॉइंट्स */
+@media (max-width: 1024px) {
+  .admin-image-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-image-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
