@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 import api from '../services/api';
 import '../styles/game.css';
 
-const socketSpin = io('http://localhost:5000');
+const socketSpin = io('https://tb-backend-hh7d.onrender.com');
 const NUMBERS = Array.from({ length: 10 }, (_, i) => i.toString());
 
 export default function SpinGamePage() {
