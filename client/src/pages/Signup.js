@@ -11,7 +11,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       await axios.post(
-        'http://localhost:5000/api/auth/signup',
+        'http://https://tb-backend-hh7d.onrender.com/api/auth/signup',
         { email, password },
         { headers: { 'Content-Type': 'application/json' } }
       );
