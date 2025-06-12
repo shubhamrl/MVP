@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 import api from '../services/api';
 import '../styles/dashboard.css';
 
-const socket = io('https://tb-backend-hh7d.onrender.com', {
+const socket = io('https://tb-backend-1.onrender.com', {
   transports: ['websocket'],
   reconnectionAttempts: 5,
   timeout: 20000,
