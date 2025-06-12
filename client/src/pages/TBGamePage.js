@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 import api from '../services/api';
 import '../styles/game.css';
 
-const socket = io('http://localhost:5000', {
+const socket = io('https://tb-backend-hh7d.onrender.com', {
   transports: ['websocket'],
   reconnectionAttempts: 5,
   timeout: 20000,
